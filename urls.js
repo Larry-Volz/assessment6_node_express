@@ -8,10 +8,17 @@ const fileName = argv[2];
 
 async function processEach(arr){
     for (line of arr){
+
+    // For each URL, the output filename should be the hostname of the URL. For example, for the input URL http://yahoo.com/blah/blah, your script should write the contents to a plain text file called yahoo.com
+    shortName = line.replace(/^(?:https?:\/\/)?(?:www\.)?/i, "").split('/')[0];
+    console.log(shortName);
+
     //get that page (a GET request to the URL)
-    url = await axios.get(line);
-    console.log(url)
+    // htmlContent = await axios.get(line);
+    // console.log(htmlContent)
     
+    // save the HTML in a new file.
+
     }
 
 }
@@ -33,8 +40,6 @@ data.split(/\r?\n/).forEach(line =>  {
 
 results = processEach(lines);
 
-    // save the HTML in a new file.
-    // For each URL, the output filename should be the hostname of the URL. For example, for the input URL http://yahoo.com/blah/blah, your script should write the contents to a plain text file called yahoo.com
 
 
 
