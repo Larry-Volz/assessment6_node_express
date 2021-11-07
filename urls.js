@@ -3,6 +3,7 @@
 let axios = require('axios');
 const process = require('process');
 const fs = require('fs');
+const { type } = require('os');
 const argv = process.argv;
 const fileName = argv[2];
 
@@ -11,14 +12,20 @@ async function processEach(arr){
 
     // For each URL, the output filename should be the hostname of the URL. For example, for the input URL http://yahoo.com/blah/blah, your script should write the contents to a plain text file called yahoo.com
     shortName = line.replace(/^(?:https?:\/\/)?(?:www\.)?/i, "").split('/')[0];
-    console.log(shortName);
-
-    //get that page (a GET request to the URL)
-    // htmlContent = await axios.get(line);
-    // console.log(htmlContent)
     
-    // save the HTML in a new file.
+    //get that page (a GET request to the URL)
+    siteContents = await axios.get(line)
+    siteContents = siteContents.data;
+    //NOTE: siteContents was returning [object, object] have to add .data!
+    // console.log(`SITE CONTENTS of ${line}\n\r ${siteContents}`);
 
+
+    // save the HTML in a new file.
+    fs.writeFile(`./outputFiles/${shortName}`, siteContents, "utf8", function(err){
+        console.error(`${shortName} FILE NOT WRITTEN?  Error:\n\r ${err}`);
+        // process.exit(1);
+    })
+    console.log(`SUCCESS: ${shortName} CREATED!`)
     }
 
 }
