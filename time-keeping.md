@@ -6,5 +6,5 @@
 |11-6-21|12:45pm|1:05|:20|Did the conceptual markdown assignment|
 |11-6-21|5:30pm|5:50pm|:20|played with broken app|
 11-7-21|12:45am|1:05pm|:|worked on Part 2: Async and Scripting Practice|
-11-7-21|11:35am|:|:|Did ________|
+11-7-21|11:35am|12:05pm|:30|separated file lines into an array|
 11-7-21|:pm|:|:|Did ________|
