@@ -13,25 +13,21 @@ fs.readFile(fileName, 'utf8', function(err, data) {
     process.exit(1);
   }
   // otherwise success
-  //This works:
-//   console.log(`file contents: ${data}`);
-//   data.split(/\r?\n/).forEach(line =>  {
-//     console.log(`Line from file: ${line}`);
-//   });
 
+//For each URL
 let lines = [];
 data.split(/\r?\n/).forEach(line =>  {
   lines.push(line);
 });
-for (line of lines){
-    console.log(`line:`, line)
-}
-console.log('line2: ', lines[1])
-});
+for (line of lines){console.log(`line:`, line)}
 
 
-
-//For each URL
     //get that page (a GET request to the URL)
     // save the HTML in a new file.
     // For each URL, the output filename should be the hostname of the URL. For example, for the input URL http://yahoo.com/blah/blah, your script should write the contents to a plain text file called yahoo.com
+
+
+
+    
+});
+
