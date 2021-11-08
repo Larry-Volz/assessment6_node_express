@@ -14,18 +14,22 @@ async function processEach(arr){
         shortName = line.replace(/^(?:https?:\/\/)?(?:www\.)?/i, "").split('/')[0];
         
         //get that page (a GET request to the URL)
-        siteContents = await axios.get(line)
-        siteContents = siteContents.data;
-        //NOTE: siteContents was returning [object, object] have to add .data!
-        // console.log(`SITE CONTENTS of ${line}\n\r ${siteContents}`);
+        try{
+            siteContents = await axios.get(line)
+            //NOTE: siteContents was returning [object, object] had to add .data!
+            siteContents = siteContents.data;
         
-        
-        // save the HTML in a new file.
-        fs.writeFile(`./outputFiles/${shortName}`, siteContents, "utf8", function(err){
-            console.error(`${shortName} FILE NOT WRITTEN?  Error: ${err}\n\r`);
-            // process.exit(1);
-        })
-        console.log(`SUCCESS: ${shortName} CREATED!\r\n`)
+            // save the HTML in a new file.
+            fs.writeFile(`./${shortName}`, siteContents, "utf8", function(err){
+                if(err){
+                    console.error(`${shortName} FILE NOT WRITTEN?  Error: ${err}\n\r`);
+                }
+            })
+            console.log(`SUCCESS: ${shortName} CREATED!\r\n`)
+        }catch(err){
+            //QUESTION FOR KYLE: why is this line 
+            console.error(`Error caught in try block: ${err}\n\r`);
+        }
     }
     
 }
@@ -50,9 +54,6 @@ lines.push(line);
 
 
 results = processEach(lines);
-
-
-
 
 
 });

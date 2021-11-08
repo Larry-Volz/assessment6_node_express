@@ -12,7 +12,7 @@
   <meta property="og:url" content="https://www.postgresql.org/" />
   <meta property="og:type" content="article" />
   <meta property="article:author" content="PostgreSQL Global Development Group" />
-  <meta property="article:published_time" content="2021-11-08T01:40:16.676445" />
+  <meta property="article:published_time" content="2021-11-08T02:10:06.975065" />
   <meta property="og:image" content="https://www.postgresql.org/media/img/about/press/elephant.png" />
   <meta property="og:title" content="PostgreSQL" />
   <meta property="og:description" content="The world&#39;s most advanced open source database." />

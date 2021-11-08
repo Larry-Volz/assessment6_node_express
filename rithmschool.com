@@ -23,7 +23,7 @@
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-eb41ae8905bdd2b439d03b1628aaa345c177848bb8e6c36ea8c5a56cf03ef757.ico" />
   <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="Ry0xodr9hwp1fm43/PXJxqoZXU8bTgIrePFQsceEjSNlVgTBJs+9VIS/2THbPkwmgySM8tBJ8vHeMyoukC8T+w==" />
+<meta name="csrf-token" content="gtjJhSQc5G8GPhKYPatfPyrzh8ZVx5pcGuDch6xmHMcz2za1Eh1yoG1VHY8TwmXgXb0lWS1IXdENc4WrD3qWJA==" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -484,7 +484,7 @@ window.ChatraSetup = {
             <a style="padding:0;" class="footer-logo" href="/">
               <img class="logo" width="120" height="58" alt="rithm school company logo" title="Rithm School Logo" src="/assets/logos/rithm_logo-0bbe0cba0becc168bb1ed46540bd26d6921d9f5194372128512268c203687780.svg" />
 </a>            <span>
-                <a class="text-muted faq-url" href="/cdn-cgi/l/email-protection#7811161e17380a110c10150b1b10171714561b1715">info@rithmschool.com</a>
+                <a class="text-muted faq-url" href="/cdn-cgi/l/email-protection#1e777078715e6c776a76736d7d76717172307d7173">info@rithmschool.com</a>
             </span>
         </div>
         <div class="col-md-6 col-sm-8">
@@ -524,7 +524,7 @@ window.ChatraSetup = {
 <div class="thank_you"></div>
 <div class="container">
   <form id="unlock-form" class="card mfp-hide white-popup-block" >
-<input type="hidden" name="authenticity_token" id="authenticity_token" value="+TYCUR3kJshiHP+PRytt7dZDk/Oq35Q0X5QqqwfUW1fbTTcx4dYclpPdSIlg4OgN/35CTmHYZO75VlA0UH/Fjw==" />  <div id="modal-email-known" style="display:none;">
+<input type="hidden" name="authenticity_token" id="authenticity_token" value="pHSM5KNcaB0u5hxYZXVNbcNu73ynROtuQv0IG3WnBIgVd3PUlV3+0kWNE09LHHeytCBN49/LLONVblE31ruOaw==" />  <div id="modal-email-known" style="display:none;">
     <h1 class="text-center">Signed up already? Please enter your email to confirm.</h1>
     <div class="email-errors text-center"></div>
     <hr class="modal--bar">
