@@ -12,7 +12,7 @@
   <meta property="og:url" content="https://www.postgresql.org/" />
   <meta property="og:type" content="article" />
   <meta property="article:author" content="PostgreSQL Global Development Group" />
-  <meta property="article:published_time" content="2021-11-07T21:10:48.469959" />
+  <meta property="article:published_time" content="2021-11-08T01:40:16.676445" />
   <meta property="og:image" content="https://www.postgresql.org/media/img/about/press/elephant.png" />
   <meta property="og:title" content="PostgreSQL" />
   <meta property="og:description" content="The world&#39;s most advanced open source database." />
@@ -355,6 +355,16 @@
       
         <div class="col-md-4">
           <div class="text-center">
+            <h3><a href="https://postgr.es/p/5cu"> 🚀 Think about Primary Key &amp; Indexes before anything else</a></h3>
+            <ul class="meta">
+              <li><i class="far fa-comments"></i>&nbsp;Franck Pachot</li>
+              <li><i class="far fa-clock"></i>&nbsp;2021-11-07</li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="col-md-4">
+          <div class="text-center">
             <h3><a href="https://postgr.es/p/5ct"> Find missing OpenStreetMap data with PostGIS</a></h3>
             <ul class="meta">
               <li><i class="far fa-comments"></i>&nbsp;Ryan Lambert</li>
@@ -429,16 +439,6 @@
             <ul class="meta">
               <li><i class="far fa-comments"></i>&nbsp;Franck Pachot</li>
               <li><i class="far fa-clock"></i>&nbsp;2021-11-03</li>
-            </ul>
-          </div>
-        </div>
-      
-        <div class="col-md-4">
-          <div class="text-center">
-            <h3><a href="https://postgr.es/p/5cj"> pspg 5.5.0</a></h3>
-            <ul class="meta">
-              <li><i class="far fa-comments"></i>&nbsp;Pavel Stehule</li>
-              <li><i class="far fa-clock"></i>&nbsp;2021-11-02</li>
             </ul>
           </div>
         </div>
