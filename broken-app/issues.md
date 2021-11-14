@@ -8,3 +8,6 @@
 TypeError: req.body.developers.map(...).then is not a function"  So I re-factored it more simply so each part could be tested.
 - used res.json() instead of stringify
 - added a 404 handler
+- added a custom ExpressError handler in case of failure to communicate with GitHub
+- switched to .then()'s and .catch() to handle errors and run async requests in order
+- despite try/catch blocks and .catch()'s that threw custom errors (printing to console) I kept getting an unhandled exception error that I could not overcome despite significant time in debugger and doing lots of console logging to try and figure out what I am doing wrong.  It seems like the .catch()'s aren't satisfying the system and I need help in this from my mentor.  Turning it in as is
